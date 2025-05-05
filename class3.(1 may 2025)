@@ -1,0 +1,980 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "90df8a19-0f85-4c6b-8d81-171255b41949",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "3eee2723-d1b0-4722-a6c1-3f7a011b75a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "x=10\n",
+    "y=x\n",
+    "id(x)\n",
+    "id(y)\n",
+    "id(x)==id(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "ad46fe4a-971b-460c-a9a0-e5d6da62944c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "140726519081688"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "a985d044-5b78-4229-9703-f99a57944955",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "140726519081688"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "id(y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c7fb6551-5556-4ca1-93d7-f2147821dc9f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "140726519081688"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "z = 10\n",
+    "id(z)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "2c57ae4e-ada3-4f09-9448-2210d7bc4f1e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "33\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 1+2**3*4\n",
+    "print(x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "b37ab911-159d-414b-8ff7-590785ebb29e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "-69\n"
+     ]
+    }
+   ],
+   "source": [
+    "y=10-2**4*5+1\n",
+    "print(y)"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "9f430a28-6414-4432-9a86-29f25665668b",
+   "metadata": {},
+   "source": [
+    "# Today Topics\n",
+    "- variables\n",
+    "- Expressions\n",
+    "- Strings(str)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "01fd07a4-ffde-46ba-a9cc-8b250818fcce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "20\n"
+     ]
+    }
+   ],
+   "source": [
+    "age = 20\n",
+    "print(age)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "6f510c67-9977-4478-91aa-aacae022c818",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "40\n"
+     ]
+    }
+   ],
+   "source": [
+    "age = 40\n",
+    "print(age)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "ee16a489-82a8-45a7-a80c-fd7149a05c9e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name = 'Asad'\n",
+    "type(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "16d1ce4b-3dbd-4bd5-8532-5407c2a3b303",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bc0a904d-b182-4596-91c1-cbd24b4b2dc0",
+   "metadata": {},
+   "source": [
+    "# variable naming\n",
+    "- don't use reserve words (keywords)\n",
+    "- no space\n",
+    "- no number in start\n",
+    "- no special charecters are used in variables\n",
+    "- under score is used in variable"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0a43d36d-65fa-49d7-840b-c6d661957f38",
+   "metadata": {},
+   "source": [
+    "# Convention to declare a variable\n",
+    "- snake case : use under score in big names\n",
+    "- camel case : after first word all the first later of word is upper case\n",
+    "- pascal case : All the first letter of word is upper case\n",
+    "- kebab case : All the letters are in upper case"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c71681d4-3d4f-4e77-8e22-7cf1712ba5e3",
+   "metadata": {},
+   "source": [
+    "# phython string : It is immutable not changable \n",
+    " - you can change it by name\n",
+    " - text.capitalize\n",
+    " - text.lower\n",
+    " - text.upper\n",
+    " - text.count"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "ef32cba3-6aef-4d16-a0f4-c56dadadc7ca",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "text = 'basb naknekljdklewnl jnnjkjdsh'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "5f481711-3551-4415-9ec8-57e434801e8d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "basb naknekljdklewnl jnnjkjdsh\n"
+     ]
+    }
+   ],
+   "source": [
+    "text.capitalize()\n",
+    "print(text)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "ab201d08-3823-4540-b0bf-461e4940349d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Basb naknekljdklewnl jnnjkjdsh'"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.capitalize()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "505f565f-4b51-438a-a902-7cd68aae397d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'BASB NAKNEKLJDKLEWNL JNNJKJDSH'"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.upper()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "f780c79a-4f09-46cb-b53a-9e1f45a355e0",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 47,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.count('a')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "fba4f86c-ed93-41fc-88f3-f3bcc6897280",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'basb naknekljdklewnl jnnjkjdsh'"
+      ]
+     },
+     "execution_count": 49,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.lower()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "id": "9ebba419-2c5e-416a-a224-a176731795cb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "29"
+      ]
+     },
+     "execution_count": 51,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.find('h')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "b826ed99-6883-457e-b254-23b9963e9378",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.endswith('h')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "bb040ee8-d13c-499c-82c8-ca5d3cf5881c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "text.startswith('a')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "4370243c-4ae7-4aa4-b701-05c0458e0e91",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "11"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name = ' Asad khan '\n",
+    "len(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "dd5cd7d6-b055-4d0b-8cc4-daf57981aaa4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name == ' Asad khan '"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "e84bbf48-3e32-4f6d-aacc-194bbc1b55ca",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' Asad khan'"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.rstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "97e0503f-54dd-4955-9333-1cddd527600a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Asad khan '"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.lstrip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "b1af09d7-a184-4719-bc04-6eb6ef818d73",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Asad khan'"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.strip()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "0e463850-7313-4af0-a0f7-3e2e1bf31aa1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      " Asad khan \n"
+     ]
+    }
+   ],
+   "source": [
+    "print(name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "4d4c3ef2-e424-45e2-bfbb-28fda27474e4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "' Aaad khan '"
+      ]
+     },
+     "execution_count": 71,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.replace('s','a')"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f4077c37-c74f-4d6f-9fd4-a88534630854",
+   "metadata": {},
+   "source": [
+    "# is():\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "3161335e-6ce9-49c3-a3df-d821ce1b3d9d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "age = '23'\n",
+    "name = 'Asad'\n",
+    "var = ''"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "a8181f1e-33b2-4eb6-a5c3-8bf76098d962",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 78,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age.isalpha()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "id": "e52bc8d0-5f5d-4c49-8a08-fe55c9f023b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 80,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age.isalnum()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "866202aa-bf31-46ef-8ac6-b7201450f780",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 82,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.isalpha()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "617d54ae-132e-4a47-aeba-d37cb471f639",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 84,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name.isalnum()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "5434ef96-4352-42e9-8d08-0b1436d7a77d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "var.isalpha()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "616fc3ff-ac4c-4423-8c8d-727d056a8ad4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age.isdigit()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "96c26ced-9f76-4dc6-8db5-efb073776150",
+   "metadata": {},
+   "source": [
+    "# String concanet and String format"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "c0cd468e-8c5b-42e7-845b-31e64e15f4ae",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Asad Khan\n"
+     ]
+    }
+   ],
+   "source": [
+    "f_name = 'Asad'\n",
+    "l_name = 'Khan'\n",
+    "full_name = f_name +\" \"+l_name\n",
+    "print(full_name)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "596de9f5-a716-4f43-a881-3ea23b02a0cd",
+   "metadata": {},
+   "source": [
+    "# Input"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "07e8822f-41f5-43b4-a1ad-f26ec408e522",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "What is your name? Asad\n",
+      "What is your age? 23\n",
+      "Enter your city? karachi\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Name us ka AsadAge uska23\n"
+     ]
+    }
+   ],
+   "source": [
+    "Name = input('What is your name?')\n",
+    "age = int(input('What is your age?'))\n",
+    "city = input('Enter your city?')\n",
+    "print('Name us ka '+name+'Age uska'+ str(age))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "e325f2c0-ee87-43a4-98c2-02ca36a71537",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Name us ka AsadAge uska23\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Name us ka '+name+'Age uska'+ str(age))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "id": "202524f6-2d75-4a41-b1e5-ae38bae46dbb",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Asad'"
+      ]
+     },
+     "execution_count": 98,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "e4ae2313-2100-4e48-9eee-b36a68c9955c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'23'"
+      ]
+     },
+     "execution_count": 102,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "age"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "44d71674-5ce4-4dec-a521-aceed0471f83",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "23"
+      ]
+     },
+     "execution_count": 104,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(age)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ee4c53a0-b7c7-41ac-bc43-c8c2c6702361",
+   "metadata": {},
+   "source": [
+    "# Type casting\n",
+    "- changing the string into integer  and int to string is a type ccasting"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "0fd40a34-e54f-4142-81cb-3530ecf1b42e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "23"
+      ]
+     },
+     "execution_count": 110,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name\n",
+    "age"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7e62a627-ca35-4173-b2c0-8d1a5e68d350",
+   "metadata": {},
+   "source": [
+    "# F-String"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "808c66e9-7a88-436b-ae58-3d48e6b38bfc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Name uska Asad.Age uska 23\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(f'Name uska {name}.Age uska {age}')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "74f99377-e9f9-4a25-94a6-15394d8e85c4",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
